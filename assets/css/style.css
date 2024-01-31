@@ -435,6 +435,8 @@ main {
   color: var(--white-2);
 }
 
+
+
 .social-list {
   display: flex;
   justify-content: flex-start;
@@ -1488,7 +1490,30 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .companies-item { min-width: calc(33.33% - 35px); }
 
+  .company-logo-circle {
+    border: 6px solid var(--light-green);
+    background-color: #525252;
+    padding: 10px;
+    border-radius: 50%; /* Make the image appear as a circle */
+    filter: grayscale(80%); /* Make the image grayscale */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: all 0.3s ease; /* Add transition for smooth hover effect */
+  }
 
+  .company-box-img {
+    width: 220px;  /* Adjust this value as needed */
+    height: auto;  /* Maintain the aspect ratio */
+    display: block;  /* To allow margins and padding */
+    margin: auto;  /* To center the image if it's smaller than the box */
+    object-fit: contain; /* Maintain aspect ratio */
+  }
+
+  .company-logo-circle:hover {
+    filter: none; /* Remove the grayscale effect when the mouse hovers over the image */
+    transform: translateY(-5px); /* Move the circle up a bit */
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    background-color: #ffffff;
+  }
 
   /**
    * #RESUME
@@ -1863,11 +1888,14 @@ textarea.form-input::-webkit-resizer { display: none; }
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    color: var(--light-green);
   }
 
   .contact-info :is(.contact-link, time, address) {
     --fs-7: 14px;
     font-weight: var(--fw-300);
+  /*  make color green of text*/
+    color: var(--light-green);
   }
 
   .separator:last-of-type {
@@ -1884,5 +1912,15 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 */
 
   .timeline-text { max-width: 700px; }
+
+  /**
+   * Mobile Experience
+   */
+  @media (max-width: 600px) {
+    .company-logo-circle {
+      filter: none;
+      display: block;
+    }
+  }
 
 }

@@ -64,7 +64,7 @@
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --light-green: hsl(108, 26%, 48%);
-  --dark-green: hsl(114, 35%, 35%);
+  --dark-green: hsl(114, 34%, 35%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -267,7 +267,7 @@ article.active {
 
 .has-scrollbar::-webkit-scrollbar-thumb {
   background: var(--light-green);
-  border-radius: 5px;
+  border-radius: 40px;
 }
 
 .has-scrollbar::-webkit-scrollbar-button { width: 20px; }
@@ -399,9 +399,8 @@ main {
 }
 
 .contacts-list {
-  display: grid;
+  display: table;
   grid-template-columns: 1fr;
-  gap: 16px;
 }
 
 .contact-item {
@@ -409,6 +408,7 @@ main {
   display: flex;
   align-items: center;
   gap: 16px;
+  margin-bottom: 10px; /* Add space between contact items */
 }
 
 .contact-info {

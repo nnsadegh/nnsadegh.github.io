@@ -22,7 +22,7 @@
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -46,9 +46,9 @@
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Daniel Netanel Sadeghi">Netanel Sadeghi</h1>
+          <h1 class="name" title="Daniel Netanel Sadeghi">Daniel Netanel Sadeghi</h1>
 
-          <p class="title">Site Reliability Engineer @ Google</p>
+          <p class="title">Site Reliability Engineer</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -123,19 +123,19 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/netanelsadeghi/" class="social-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/netanelsadeghi/" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://github.com/nnsadegh" class="social-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/nnsadegh" class="social-link">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://www.instagram.com/nsadegs/" class="social-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/nsadegs/" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
@@ -176,6 +176,10 @@
 <!--            <button class="navbar-link" data-nav-link>Portfolio</button>-->
 <!--          </li>-->
 
+<!--          <li class="navbar-item">-->
+<!--            <button class="navbar-link" data-nav-link>Contact</button>-->
+<!--          </li>-->
+
         </ul>
 
       </nav>
@@ -196,11 +200,14 @@
 
         <section class="about-text">
           <p>
-            Hi, I’m Netanel Sadeghi, a Site Reliability Engineer at Google in New York. I specialize in building and scaling resilient distributed systems, with a Master’s in Computer Science from USC. My work focuses on automation, system observability, and high-availability storage solutions.
+            Hi, I’m Netanel Sadeghi, a software engineer at Google based in New York. I hold a Master’s in Computer Science from USC and have experience in software development, cloud infrastructure, and full-stack engineering. My work spans across backend systems, debugging tools, and scalable applications, with a strong focus on efficiency and reliability.
+            I have a strong background in software development and I'm proficient in Java, C++, Python, and SQL. I'm
+            also familiar with JavaScript, HTML, CSS, and PHP for web development.
           </p>
 
           <p>
-            Beyond the terminal, I’m passionate about cooking, skiing, and writing. I'm always looking for ways to bridge the gap between complex infrastructure and intuitive user experiences.
+            Beyond my profession, I’m passionate about cooking and writing. In my free time, you’ll find me skiing during the winter or hiking during the summer.
+            Feel free to contact me!
           </p>
         </section>
 
@@ -218,14 +225,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <ion-icon name="shield-checkmark-outline" size="large"></ion-icon>
+                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Site Reliability</h4>
+                <h4 class="h4 service-item-title">Software Development</h4>
 
                 <p class="service-item-text">
-                  Ensuring high availability and performance for production storage services at scale.
+                  Advanced application designs fit to solve any problem at any level.
                 </p>
               </div>
 
@@ -234,14 +241,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <ion-icon name="git-network-outline" size="large"></ion-icon>
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Distributed Systems</h4>
+                <h4 class="h4 service-item-title">Web Development</h4>
 
                 <p class="service-item-text">
-                  Designing and implementing scalable backend architectures and cloud infrastructure.
+                  High-quality development of sites at the professional level.
                 </p>
               </div>
 
@@ -250,14 +257,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <ion-icon name="construct-outline" size="large"></ion-icon>
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Automation & Tooling</h4>
+                <h4 class="h4 service-item-title">Mobile App Development</h4>
 
                 <p class="service-item-text">
-                  Building custom debugging tools and automation to reduce operational toil.
+                  Professional development of applications for iOS and Android.
                 </p>
               </div>
 
@@ -266,14 +273,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <ion-icon name="code-slash-outline" size="large"></ion-icon>
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Full-Stack Development</h4>
+                <h4 class="h4 service-item-title">Information Technology</h4>
 
                 <p class="service-item-text">
-                  Creating end-to-end applications with a focus on efficiency and clean design.
+                  Whatever your tech problem is, I've got you covered.
                 </p>
               </div>
 
@@ -517,10 +524,7 @@
 
             <li class="timeline-item">
 
-              <div class="timeline-title-wrapper">
-                <img src="./assets/images/usc-logo-minimal.png" alt="USC Logo" class="timeline-logo">
-                <h4 class="h4 timeline-item-title">University of Southern California</h4>
-              </div>
+              <h4 class="h4 timeline-item-title">University of Southern California</h4>
 
               <span>2023 — 2024</span>
 
@@ -532,10 +536,7 @@
 
             <li class="timeline-item">
 
-              <div class="timeline-title-wrapper">
-                <img src="./assets/images/usc-logo-minimal.png" alt="USC Logo" class="timeline-logo">
-                <h4 class="h4 timeline-item-title">University of Southern California</h4>
-              </div>
+              <h4 class="h4 timeline-item-title">University of Southern California</h4>
 
               <span>2020 — 2023</span>
 
@@ -547,10 +548,7 @@
 
             <li class="timeline-item">
 
-              <div class="timeline-title-wrapper">
-                <img src="./assets/images/smc-logo-minimal.png" alt="SMC Logo" class="timeline-logo">
-                <h4 class="h4 timeline-item-title">Santa Monica College</h4>
-              </div>
+              <h4 class="h4 timeline-item-title">Santa Monica College</h4>
 
               <span>2019 — 2020</span>
 
@@ -562,10 +560,7 @@
 
             <li class="timeline-item">
 
-              <div class="timeline-title-wrapper">
-                <img src="./assets/images/shalhevet-logo-minimal.png" alt="Shalhevet Logo" class="timeline-logo">
-                <h4 class="h4 timeline-item-title">Shalhevet High School</h4>
-              </div>
+              <h4 class="h4 timeline-item-title">Shalhevet High School</h4>
 
               <span>2016-2019</span>
 
@@ -592,10 +587,7 @@
           <ol class="timeline-list">
             <li class="timeline-item">
 
-              <div class="timeline-title-wrapper">
-                <img src="./assets/images/Google_logo.png" alt="Google Logo" class="timeline-logo">
-                <h4 class="h4 timeline-item-title">Site Reliability Engineer @ Google</h4>
-              </div>
+              <h4 class="h4 timeline-item-title">Site Reliability Engineer @ Google</h4>
 
               <span>August 2024 - Present</span>
 
@@ -607,10 +599,7 @@
 
             <li class="timeline-item">
 
-              <div class="timeline-title-wrapper">
-                <img src="./assets/images/marshall-logo-minimal.png" alt="Marshall Logo" class="timeline-logo">
-                <h4 class="h4 timeline-item-title">Teaching Assistant @ Marshall School of Business</h4>
-              </div>
+              <h4 class="h4 timeline-item-title">Teaching Assistant @ Marshall School of Business</h4>
 
               <span>August 2023 - December 2023</span>
 
@@ -623,10 +612,7 @@
 
             <li class="timeline-item">
 
-              <div class="timeline-title-wrapper">
-                <img src="./assets/images/amazon-logo-clean.png" alt="Amazon Logo" class="timeline-logo">
-                <h4 class="h4 timeline-item-title">Software Development Engineer Intern @ Amazon</h4>
-              </div>
+              <h4 class="h4 timeline-item-title">Software Development Engineer Intern @ Amazon</h4>
 
               <span>Summer 2022 — Summer 2023</span>
 
@@ -639,10 +625,7 @@
 
             <li class="timeline-item">
 
-              <div class="timeline-title-wrapper">
-                <img src="./assets/images/viterbi-square-logo-clean.png" alt="Viterbi Logo" class="timeline-logo">
-                <h4 class="h4 timeline-item-title">Teaching Assistant @ Viterbi School of Engineering</h4>
-              </div>
+              <h4 class="h4 timeline-item-title">Teaching Assistant @ Viterbi School of Engineering</h4>
 
               <span>May 2021 — May 2023</span>
 
@@ -654,10 +637,7 @@
 
             <li class="timeline-item">
 
-              <div class="timeline-title-wrapper">
-                <img src="./assets/images/CAR-logo-clean.png" alt="CAR Logo" class="timeline-logo">
-                <h4 class="h4 timeline-item-title">Information Technology Intern @ California Association of Realtors</h4>
-              </div>
+              <h4 class="h4 timeline-item-title">Information Technology Intern @ California Association of Realtors</h4>
 
               <span>June 2018 — August 2019</span>
 
@@ -669,10 +649,7 @@
 
             <li class="timeline-item">
 
-              <div class="timeline-title-wrapper">
-                <img src="./assets/images/bluebird-logo-clean.png" alt="Bluebird Logo" class="timeline-logo">
-                <h4 class="h4 timeline-item-title">Web Developer @ Bluebird Office Supplies</h4>
-              </div>
+              <h4 class="h4 timeline-item-title">Web Developer @ Bluebird Office Supplies</h4>
 
               <span>May 2021 — January 2022</span>
 
@@ -684,10 +661,7 @@
 
             <li class="timeline-item">
 
-              <div class="timeline-title-wrapper">
-                <img src="./assets/images/planet-bravo-logo-clean.png" alt="Planet Bravo Logo" class="timeline-logo">
-                <h4 class="h4 timeline-item-title">Counselor in Training @ Planet Bravo</h4>
-              </div>
+              <h4 class="h4 timeline-item-title">Counselor in Training @ Planet Bravo</h4>
 
               <span>June 2016 — July 2017</span>
 
@@ -837,20 +811,20 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://github.com/nnsadegh/Ohr">
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="Ohr - Jewish Calendar" loading="lazy">
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Ohr</h3>
+                <h3 class="project-title">Finance</h3>
 
-                <p class="project-category">iOS Application • Swift</p>
+                <p class="project-category">Web development</p>
 
               </a>
             </li>
@@ -863,12 +837,12 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="BillSplitter" loading="lazy">
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">BillSplitter</h3>
+                <h3 class="project-title">Orizon</h3>
 
-                <p class="project-category">Web Development • React</p>
+                <p class="project-category">Web development</p>
 
               </a>
             </li>
@@ -1009,13 +983,240 @@
 
 
 
-      <!-- Blog section removed -->
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
 
 
 
 
 
-      <!-- Contact section removed -->
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
 
     </div>
 

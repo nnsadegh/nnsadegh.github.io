@@ -16,6 +16,7 @@
 \*-----------------------------------*/
 
 :root {
+
   /**
    * colors
    */
@@ -73,8 +74,7 @@
    */
 
   /* font-family */
-  --ff-poppins: 'Inter', sans-serif;
-  --ff-outfit: 'Outfit', sans-serif;
+  --ff-poppins: 'Poppins', sans-serif;
 
   /* font-size */
   --fs-1: 24px;
@@ -91,7 +91,6 @@
   --fw-400: 400;
   --fw-500: 500;
   --fw-600: 600;
-  --fw-700: 700;
 
   /**
    * shadow
@@ -169,12 +168,11 @@ body { background: var(--smoky-black); }
 .sidebar,
 article {
   background: var(--eerie-black-2);
-  border: 1px solid hsla(0, 0%, 100%, 0.1);
+  border: 1px solid var(--jet);
   border-radius: 20px;
   padding: 15px;
   box-shadow: var(--shadow-1);
   z-index: 1;
-  backdrop-filter: blur(10px);
 }
 
 .separator {
@@ -228,10 +226,9 @@ article.active {
 .h5 {
   color: var(--white-2);
   text-transform: capitalize;
-  font-family: var(--ff-outfit);
 }
 
-.h2 { font-size: var(--fs-1); font-weight: var(--fw-600); letter-spacing: -0.5px; }
+.h2 { font-size: var(--fs-1); }
 
 .h3 { font-size: var(--fs-2); }
 
@@ -553,12 +550,6 @@ main {
 
 .service-icon-box { margin-bottom: 10px; }
 
-.service-icon-box ion-icon {
-  margin: auto;
-  font-size: 40px;
-  color: var(--light-green);
-}
-
 .service-icon-box img { margin: auto; }
 
 .service-content-box { text-align: center; }
@@ -809,23 +800,7 @@ main {
 .timeline-item-title {
   font-size: var(--fs-6);
   line-height: 1.3;
-}
-
-.timeline-title-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 8px;
-}
-
-.timeline-logo {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
-  border-radius: 6px;
-  background: var(--white-1);
-  padding: 3px;
-  flex-shrink: 0;
+  margin-bottom: 7px;
 }
 
 .timeline-list span {
@@ -1910,7 +1885,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   .contacts-list { grid-template-columns: 1fr; }
 
   .contact-info :is(.contact-link) {
-    word-break: break-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     color: var(--light-green);
   }
 

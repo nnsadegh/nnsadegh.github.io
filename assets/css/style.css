@@ -34,12 +34,12 @@
   ), hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right,
-    hsl(108, 26%, 48%) 0%,
-    hsla(36, 100%, 69%, 0) 50%
+    hsl(98, 24%, 48%) 0%,
+    hsla(38, 55%, 55%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
+    hsla(38, 55%, 55%, 0.251) 0%, 
     hsla(35, 100%, 68%, 0) 59.86%
   ), hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
@@ -49,8 +49,8 @@
   );
   --text-gradient-yellow: linear-gradient(
     to right,
-    hsl(108, 26%, 48%),
-    hsl(114, 35%, 35%)
+    hsl(98, 24%, 48%),
+    hsl(38, 55%, 55%)
   );
 
   /* solid */
@@ -62,8 +62,8 @@
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --light-green: hsl(108, 26%, 48%);
-  --dark-green: hsl(114, 34%, 35%);
+  --light-green: hsl(98, 24%, 48%);
+  --dark-green: hsl(38, 55%, 55%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -830,7 +830,7 @@ main {
 
 .timeline-list span {
   color: var(--dark-green);
-  font-weight: var(--fw-400);
+  font-weight: var(--fw-600);
   line-height: 1.6;
 }
 
@@ -1916,7 +1916,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .contact-info :is(.contact-link, time, address) {
     --fs-7: 14px;
-    font-weight: var(--fw-300);
+    font-weight: var(--fw-600);
   /*  make color green of text*/
     color: var(--light-green);
   }

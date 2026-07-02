@@ -1,6 +1,6 @@
 # Personal Website
 
-This is the codebase for the personal website of Daniel Netanel Sadeghi.
+This is the codebase for the personal website of Netanel Sadeghi.
 
 ## Credits & License
 

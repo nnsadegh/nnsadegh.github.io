@@ -24,14 +24,14 @@
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
-    hsl(0, 0%, 19%) 97%
+    hsla(240, 1%, 25%, 0.6) 3%, 
+    hsla(0, 0%, 19%, 0.6) 97%
   );
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
-    hsla(240, 1%, 18%, 0.251) 0%, 
-    hsla(240, 2%, 11%, 0) 100%
-  ), hsl(240, 2%, 13%);
+    hsla(0, 0%, 100%, 0.08) 0%, 
+    hsla(0, 0%, 100%, 0) 50%
+  ), hsla(240, 2%, 12%, 0.45);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right,
     hsl(98, 24%, 48%) 0%,
@@ -41,7 +41,7 @@
     135deg, 
     hsla(38, 55%, 55%, 0.251) 0%, 
     hsla(35, 100%, 68%, 0) 59.86%
-  ), hsl(240, 2%, 13%);
+  ), hsla(240, 2%, 12%, 0.45);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
     hsl(0, 0%, 25%) 0%, 
@@ -58,7 +58,7 @@
   --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);
   --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
+  --eerie-black-2: hsla(240, 2%, 12%, 0.45); /* translucent dark bg for cards */
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
@@ -110,7 +110,81 @@
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
 
+  /* Theme-specific custom properties */
+  --border-color: hsla(0, 0%, 100%, 0.12);
+  --navbar-bg: hsla(240, 1%, 17%, 0.75);
+  --scrollbar-thumb-bg: hsla(0, 0%, 100%, 0.1);
+  --scrollbar-thumb-hover-bg: hsla(0, 0%, 100%, 0.15);
+  --scrollbar-thumb-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11), inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
+  --company-logo-bg: hsla(0, 0%, 32%, 0.7);
+  --company-logo-hover-bg: #ffffff;
+  --bg-radial-start: hsl(98, 25%, 16%);
+
 }
+
+body.light-mode {
+  /* solid overrides */
+  --jet: hsl(0, 0%, 90%);
+  --onyx: hsl(0, 0%, 92%);
+  --eerie-black-1: hsl(0, 0%, 94%);
+  --eerie-black-2: hsla(0, 0%, 100%, 0.7); /* translucent light bg for cards */
+  --smoky-black: hsl(98, 12%, 96%); /* soft green-tinted off-white body bg */
+  --white-1: hsl(240, 4%, 15%);
+  --white-2: hsl(240, 4%, 15%);
+  --light-green: hsl(98, 35%, 35%); /* darker green accent for light background readability */
+  --dark-green: hsl(38, 55%, 40%);
+  --light-gray: hsl(240, 2%, 35%);
+  --light-gray-70: hsla(240, 2%, 35%, 0.7);
+
+  /* gradient overrides */
+  --bg-gradient-onyx: linear-gradient(
+    to bottom right, 
+    hsla(0, 0%, 96%, 0.6) 3%, 
+    hsla(0, 0%, 91%, 0.6) 97%
+  );
+  --bg-gradient-jet: linear-gradient(
+    to bottom right, 
+    hsla(0, 0%, 100%, 0.5) 0%, 
+    hsla(0, 0%, 96%, 0) 100%
+  ), hsla(0, 0%, 100%, 0.65);
+  --bg-gradient-yellow-1: linear-gradient(
+    to bottom right,
+    hsl(98, 35%, 35%) 0%,
+    hsla(38, 55%, 40%, 0) 50%
+  );
+  --bg-gradient-yellow-2: linear-gradient(
+    135deg, 
+    hsla(38, 55%, 40%, 0.15) 0%, 
+    hsla(35, 100%, 68%, 0) 59.86%
+  ), hsla(0, 0%, 100%, 0.7);
+  --border-gradient-onyx: linear-gradient(
+    to bottom right, 
+    hsl(0, 0%, 88%) 0%, 
+    hsla(0, 0%, 88%, 0) 50%
+  );
+  --text-gradient-yellow: linear-gradient(
+    to right,
+    hsl(98, 35%, 35%),
+    hsl(38, 55%, 40%)
+  );
+
+  /* theme-specific overrides */
+  --border-color: hsla(0, 0%, 0%, 0.08);
+  --navbar-bg: hsla(0, 0%, 100%, 0.75);
+  --scrollbar-thumb-bg: hsla(0, 0%, 0%, 0.1);
+  --scrollbar-thumb-hover-bg: hsla(0, 0%, 0%, 0.15);
+  --scrollbar-thumb-shadow: none;
+  --company-logo-bg: hsla(0, 0%, 96%, 0.7);
+  --bg-radial-start: hsl(98, 20%, 98%);
+
+  /* shadow overrides */
+  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.06);
+  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.06);
+  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.06);
+  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.04);
+  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.06);
+}
+
 
 
 
@@ -156,7 +230,11 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
+body {
+  background: var(--smoky-black);
+  background-image: radial-gradient(circle at 50% 30%, var(--bg-radial-start) 0%, var(--smoky-black) 70%);
+  background-attachment: fixed;
+}
 
 
 
@@ -169,12 +247,12 @@ body { background: var(--smoky-black); }
 .sidebar,
 article {
   background: var(--eerie-black-2);
-  border: 1px solid hsla(0, 0%, 100%, 0.1);
+  border: 1px solid var(--border-color);
   border-radius: 20px;
   padding: 15px;
   box-shadow: var(--shadow-1);
   z-index: 1;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(16px);
 }
 
 .separator {
@@ -284,6 +362,7 @@ article.active {
   box-shadow: var(--shadow-2);
   cursor: pointer;
   z-index: 1;
+  backdrop-filter: blur(12px);
 }
 
 .content-card::before {
@@ -470,7 +549,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: var(--navbar-bg);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -497,6 +576,22 @@ main {
 .navbar-link:focus { color: var(--light-gray-70); }
 
 .navbar-link.active { color: var(--light-green); }
+
+.theme-toggle-btn {
+  color: var(--light-gray);
+  font-size: var(--fs-4);
+  padding: 20px 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-1);
+}
+
+.theme-toggle-btn:hover,
+.theme-toggle-btn:focus {
+  color: var(--light-green);
+}
+
 
 
 
@@ -540,6 +635,9 @@ main {
   border-radius: 14px;
   box-shadow: var(--shadow-2);
   z-index: 1;
+  backdrop-filter: blur(12px);
+  transform-style: preserve-3d;
+  transition: box-shadow 0.3s ease, transform 0.5s ease;
 }
 
 .service-item::before {
@@ -551,7 +649,10 @@ main {
   z-index: -1;
 }
 
-.service-icon-box { margin-bottom: 10px; }
+.service-icon-box {
+  margin-bottom: 10px;
+  transform: translateZ(20px);
+}
 
 .service-icon-box ion-icon {
   margin: auto;
@@ -561,7 +662,10 @@ main {
 
 .service-icon-box img { margin: auto; }
 
-.service-content-box { text-align: center; }
+.service-content-box {
+  text-align: center;
+  transform: translateZ(20px);
+}
 
 .service-item-title { margin-bottom: 7px; }
 
@@ -927,6 +1031,7 @@ main {
   border-radius: 14px;
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+  backdrop-filter: blur(10px);
 }
 
 .filter-select.active .select-icon { transform: rotate(0.5turn); }
@@ -944,6 +1049,7 @@ main {
   visibility: hidden;
   pointer-events: none;
   transition: 0.15s ease-in-out;
+  backdrop-filter: blur(10px);
 }
 
 .filter-select.active + .select-list {
@@ -1517,12 +1623,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .company-logo-circle {
     border: 6px solid var(--light-green);
-    background-color: #525252;
+    background-color: var(--company-logo-bg);
     padding: 10px;
     border-radius: 50%; /* Make the image appear as a circle */
     filter: grayscale(80%); /* Make the image grayscale */
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Add shadow */
     transition: all 0.3s ease; /* Add transition for smooth hover effect */
+    backdrop-filter: blur(8px);
   }
 
   .company-box-img {
@@ -1537,7 +1644,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     filter: none; /* Remove the grayscale effect when the mouse hovers over the image */
     transform: translateY(-5px); /* Move the circle up a bit */
     box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
-    background-color: #ffffff;
+    background-color: var(--company-logo-hover-bg);
   }
 
   /**
@@ -1832,13 +1939,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   body::-webkit-scrollbar-thumb {
     border: 5px solid var(--smoky-black);
-    background: hsla(0, 0%, 100%, 0.1);
+    background: var(--scrollbar-thumb-bg);
     border-radius: 20px;
-    box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
-                inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
+    box-shadow: var(--scrollbar-thumb-shadow);
   }
 
-  body::-webkit-scrollbar-thumb:hover { background: hsla(0, 0%, 100%, 0.15); }
+  body::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-thumb-hover-bg); }
 
   body::-webkit-scrollbar-button { height: 60px; }
 

@@ -160,3 +160,71 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+
+// theme toggle variables
+const themeToggleBtn = document.querySelector("#theme-toggle");
+const themeToggleIcon = document.querySelector("#theme-toggle-icon");
+
+// Check for saved theme preference, otherwise use dark mode by default
+const savedTheme = localStorage.getItem("theme") || "dark";
+
+if (savedTheme === "light") {
+  document.body.classList.add("light-mode");
+  themeToggleIcon.setAttribute("name", "moon-outline");
+} else {
+  document.body.classList.remove("light-mode");
+  themeToggleIcon.setAttribute("name", "sunny-outline");
+}
+
+// add click event to theme toggle button
+themeToggleBtn.addEventListener("click", function () {
+  document.body.classList.toggle("light-mode");
+  
+  if (document.body.classList.contains("light-mode")) {
+    themeToggleIcon.setAttribute("name", "moon-outline");
+    localStorage.setItem("theme", "light");
+  } else {
+    themeToggleIcon.setAttribute("name", "sunny-outline");
+    localStorage.setItem("theme", "dark");
+  }
+});
+
+
+
+// 3D card tilt effect for "What I'm doing" cards
+const serviceItems = document.querySelectorAll(".service-item");
+
+serviceItems.forEach(card => {
+  card.addEventListener("mousemove", function (e) {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left; // mouse x relative to card
+    const y = e.clientY - rect.top;  // mouse y relative to card
+    
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    
+    const deltaX = x - centerX;
+    const deltaY = y - centerY;
+    
+    const maxTilt = 12; // Maximum tilt angle in degrees
+    const rotateX = -(deltaY / centerY) * maxTilt;
+    const rotateY = (deltaX / centerX) * maxTilt;
+    
+    // Disable transitions during movement for instant, tactile responsiveness
+    card.style.transition = "none";
+    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.03, 1.03, 1.03)`;
+  });
+
+  card.addEventListener("mouseleave", function () {
+    // Re-enable smooth transition for returning to flat resting state
+    card.style.transition = "transform 0.5s ease, box-shadow 0.3s ease";
+    card.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)";
+  });
+
+  card.addEventListener("mouseenter", function () {
+    // Add smooth transition for entry to transition from resting to tilt state
+    card.style.transition = "transform 0.3s ease";
+  });
+});

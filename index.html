@@ -48,7 +48,7 @@
         <div class="info-content">
           <h1 class="name" title="Netanel Sadeghi">Netanel Sadeghi</h1>
 
-          <p class="title">Site Reliability Engineer @ Google</p>
+          <p class="title">Site Reliability Software Engineer @ Google</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -106,13 +106,24 @@
         <div class="separator"></div>
 
         <ul>
-          <a class="contact-link" href="/assets/miscellaneous/vcard.vcf" download="NetanelSadeghi.vcf">
+          <a class="contact-link" href="./assets/miscellaneous/vcard.vcf" download="NetanelSadeghi.vcf">
             <li class="contact-item">
               <div class="icon-box">
                 <ion-icon name="person-add"></ion-icon>
               </div>
               <div class="contact-info">
                 <button class="vcard-button">Add to Contacts</button>
+              </div>
+            </li>
+          </a>
+
+          <a class="contact-link" href="./assets/miscellaneous/Daniel_Sadeghi_Resume.pdf" download="Daniel_Sadeghi_Resume.pdf" target="_blank">
+            <li class="contact-item" style="margin-top: 8px;">
+              <div class="icon-box">
+                <ion-icon name="document-text-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <button class="vcard-button">Download Resume</button>
               </div>
             </li>
           </a>
@@ -202,11 +213,11 @@
 
         <section class="about-text">
           <p>
-            Hi, I’m Netanel Sadeghi, a Site Reliability Engineer at Google in New York. I specialize in building and scaling resilient distributed systems, with a Master’s in Computer Science from USC. My work focuses on automation, system observability, and high-availability storage solutions.
+            Hi, I’m Netanel Sadeghi, a Site Reliability Software Engineer at Google in New York. I work on reliability, progressive rollouts, and hardware onboarding for the distributed storage infrastructure powering Google's distributed file system (Colossus). I hold a Master’s and Bachelor’s in Computer Science from USC.
           </p>
 
           <p>
-            Beyond the terminal, I’m passionate about cooking, skiing, and writing. I'm always looking for ways to bridge the gap between complex infrastructure and intuitive user experiences.
+            My work focuses on rollout safety gating, chaos testing, observability pipelines, and AI-assisted tooling to eliminate operational toil. Beyond the terminal, I’m passionate about cooking, skiing, and writing.
           </p>
         </section>
 
@@ -263,7 +274,7 @@
                 <h4 class="h4 service-item-title">Automation & Tooling</h4>
 
                 <p class="service-item-text">
-                  Building custom debugging tools and automation to reduce operational toil.
+                  Building custom diagnostic tools, AI assistants, and safety automation to eliminate operational toil.
                 </p>
               </div>
 
@@ -424,85 +435,14 @@
 
       <article class="resume" data-page="resume">
 
-        <header>
+        <header class="resume-header">
           <h2 class="h2 article-title">Resume</h2>
+
+          <a href="./assets/miscellaneous/Daniel_Sadeghi_Resume.pdf" class="download-resume-btn" target="_blank" download="Daniel_Sadeghi_Resume.pdf">
+            <ion-icon name="download-outline"></ion-icon>
+            <span>Download PDF</span>
+          </a>
         </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <div class="timeline-title-wrapper">
-                <img src="./assets/images/usc-logo-minimal.png" alt="USC Logo" class="timeline-logo">
-                <h4 class="h4 timeline-item-title">University of Southern California</h4>
-              </div>
-
-              <span>2023 — 2024</span>
-
-              <p class="timeline-text">
-                Master of Science in Computer Science
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <div class="timeline-title-wrapper">
-                <img src="./assets/images/usc-logo-minimal.png" alt="USC Logo" class="timeline-logo">
-                <h4 class="h4 timeline-item-title">University of Southern California</h4>
-              </div>
-
-              <span>2020 — 2023</span>
-
-              <p class="timeline-text">
-                Bachelor of Science in Computer Science and Business Administration
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <div class="timeline-title-wrapper">
-                <img src="./assets/images/smc-logo-minimal.png" alt="SMC Logo" class="timeline-logo">
-                <h4 class="h4 timeline-item-title">Santa Monica College</h4>
-              </div>
-
-              <span>2019 — 2020</span>
-
-              <p class="timeline-text">
-                Associate of Science in Computer Science
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <div class="timeline-title-wrapper">
-                <img src="./assets/images/shalhevet-logo-minimal.png" alt="Shalhevet Logo" class="timeline-logo">
-                <h4 class="h4 timeline-item-title">Shalhevet High School</h4>
-              </div>
-
-              <span>2016-2019</span>
-
-              <p class="timeline-text">
-                Engaged in extracurriculars such as varsity soccer and theatre.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
 
         <section class="timeline">
 
@@ -519,30 +459,41 @@
 
               <div class="timeline-title-wrapper">
                 <img src="./assets/images/Google_logo.png" alt="Google Logo" class="timeline-logo">
-                <h4 class="h4 timeline-item-title">Site Reliability Engineer @ Google</h4>
+                <h4 class="h4 timeline-item-title">Site Reliability Software Engineer @ Google</h4>
               </div>
 
-              <span>August 2024 - Present</span>
+              <span>August 2024 — Present &bull; New York, NY</span>
 
-              <p class="timeline-text">
-                Ensured the stability and performance of production storage services, by implementing automation to reduce manual intervention, and collaborating with software engineers to design scalable and resilient systems.
+              <p class="timeline-text" style="margin-top: 5px; font-style: italic;">
+                Reliability, deployments, and new-hardware onboarding for the storage-server layer that manages physical disks for Google's distributed file system (Colossus), across hundreds of storage clusters.
               </p>
 
-            </li>
-
-            <li class="timeline-item">
-
-              <div class="timeline-title-wrapper">
-                <img src="./assets/images/usc-marshall-logo-minimal.png" alt="Marshall Logo" class="timeline-logo">
-                <h4 class="h4 timeline-item-title">Teaching Assistant @ Marshall School of Business</h4>
-              </div>
-
-              <span>August 2023 - December 2023</span>
-
-              <p class="timeline-text">
-                Focused on enhancing student learning in Python programming through hands-on assistance, operational
-                analysis, and communication skills.
-              </p>
+              <ul class="timeline-bullets">
+                <li class="timeline-bullet-item">
+                  <strong>Rollout Velocity:</strong> Cut software rollout time per storage cluster by 33% (~6.4 to ~4.3 hours) by replacing fixed 12-minute waits with a per-server readiness check that confirms data availability before updating the next server.
+                </li>
+                <li class="timeline-bullet-item">
+                  <strong>Rollout Safety Gating:</strong> Built a C++ rollout safety check that pauses upgrades when a cluster already has degraded hardware, preventing upgrades from deepening ongoing outages; blocked unsafe upgrades in 224 clusters (37% of fleet) in 8 weeks.
+                </li>
+                <li class="timeline-bullet-item">
+                  <strong>Shadow-Mode Telemetry:</strong> Dry-ran a stricter server-health check in shadow mode across ~47,000 server updates via a custom metrics pipeline; safely paused only 0.04% of updates, adding safety at negligible rollout cost.
+                </li>
+                <li class="timeline-bullet-item">
+                  <strong>Crash-Loop Detection:</strong> Fixed a crash-loop detection gap in a cloud block-storage product by doubling the restart-detection window (30 to 60 minutes) to catch slow crash loops and safely take them out of service.
+                </li>
+                <li class="timeline-bullet-item">
+                  <strong>Hardware & Firmware Validation:</strong> Validated 3 new enterprise HDD and NVMe SSD models for fleetwide deployment by leading multi-petabyte production pilots with hardware and firmware teams.
+                </li>
+                <li class="timeline-bullet-item">
+                  <strong>Chaos Testing Orchestration:</strong> Designed a chaos-testing orchestrator for new-drive validation (saving ~40–80 engineer-hours per drive model) and built the daily pipeline selecting test servers within blast-radius limits.
+                </li>
+                <li class="timeline-bullet-item">
+                  <strong>Incident Management:</strong> Served as incident commander for 7 escalated production incidents, including recovery of 250+ storage servers in a major outage; authored 9 postmortems across ~95 days of primary on-call.
+                </li>
+                <li class="timeline-bullet-item">
+                  <strong>LLM On-Call Tooling:</strong> Built LLM-based on-call assistants translating engineer queries into diagnostic commands with least-privilege access and human approval for production changes.
+                </li>
+              </ul>
 
             </li>
 
@@ -553,12 +504,19 @@
                 <h4 class="h4 timeline-item-title">Software Development Engineer Intern @ Amazon</h4>
               </div>
 
-              <span>Summer 2022 — Summer 2023</span>
+              <span>May 2022 — August 2023</span>
 
-              <p class="timeline-text">
-                Developed a key debugging tool for grocery fulfillment data, involving backend design, AWS
-                technologies, and comprehensive documentation to maintain customer trust.
-              </p>
+              <ul class="timeline-bullets">
+                <li class="timeline-bullet-item">
+                  Reduced customer errors by 40% by building core features for a SaaS tool on a scalable AWS backend (Java, Lambda, API Gateway, VPCs).
+                </li>
+                <li class="timeline-bullet-item">
+                  Led a team of four interns through design reviews, breaking a complex product spec into small, tested deliverables.
+                </li>
+                <li class="timeline-bullet-item">
+                  Wrote 30+ pages of technical documentation, 20+ unit tests, and maintained the team's CI/CD pipeline.
+                </li>
+              </ul>
 
             </li>
 
@@ -566,13 +524,28 @@
 
               <div class="timeline-title-wrapper">
                 <img src="./assets/images/viterbi-square-logo-clean.png" alt="Viterbi Logo" class="timeline-logo">
-                <h4 class="h4 timeline-item-title">Teaching Assistant @ Viterbi School of Engineering</h4>
+                <h4 class="h4 timeline-item-title">Undergraduate Teaching Assistant @ USC Viterbi School of Engineering</h4>
               </div>
 
-              <span>May 2021 — May 2023</span>
+              <span>June 2021 — May 2023</span>
 
               <p class="timeline-text">
-                Assisted in teaching multiple computer science courses, offering extensive office hours, coordinating study materials, and developing assignments.
+                Mentored 100+ students in data structures, algorithms, and object-oriented design, and helped build course materials and exams.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <div class="timeline-title-wrapper">
+                <img src="./assets/images/usc-marshall-logo-minimal.png" alt="Marshall Logo" class="timeline-logo">
+                <h4 class="h4 timeline-item-title">Teaching Assistant @ USC Marshall School of Business</h4>
+              </div>
+
+              <span>August 2023 — December 2023</span>
+
+              <p class="timeline-text">
+                Focused on enhancing student learning in Python programming through hands-on assistance, operational analysis, and technical communication.
               </p>
 
             </li>
@@ -607,17 +580,66 @@
 
             </li>
 
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
             <li class="timeline-item">
 
               <div class="timeline-title-wrapper">
-                <img src="./assets/images/planet-bravo-logo-clean.png" alt="Planet Bravo Logo" class="timeline-logo">
-                <h4 class="h4 timeline-item-title">Counselor in Training @ Planet Bravo</h4>
+                <img src="./assets/images/usc-logo-minimal.png" alt="USC Logo" class="timeline-logo">
+                <h4 class="h4 timeline-item-title">University of Southern California</h4>
               </div>
 
-              <span>June 2016 — July 2017</span>
+              <span>2023 — 2024 &bull; Los Angeles, CA</span>
 
               <p class="timeline-text">
-                Mentored students in programming and technology, facilitating the development of their personal projects and enhancing the curriculum.
+                Master of Science in Computer Science &bull; <strong>GPA: 3.88</strong>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <div class="timeline-title-wrapper">
+                <img src="./assets/images/usc-logo-minimal.png" alt="USC Logo" class="timeline-logo">
+                <h4 class="h4 timeline-item-title">University of Southern California</h4>
+              </div>
+
+              <span>2020 — 2023 &bull; Los Angeles, CA</span>
+
+              <p class="timeline-text">
+                Bachelor of Science in Computer Science and Business Administration &bull; <strong>GPA: 3.90</strong>
+              </p>
+              <p class="timeline-text" style="font-size: var(--fs-7); margin-top: 4px; color: var(--light-green);">
+                Honors: Viterbi Dean's List (Fall 2020 — Fall 2023)
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <div class="timeline-title-wrapper">
+                <img src="./assets/images/smc-logo-minimal.png" alt="SMC Logo" class="timeline-logo">
+                <h4 class="h4 timeline-item-title">Santa Monica College</h4>
+              </div>
+
+              <span>2019 — 2020</span>
+
+              <p class="timeline-text">
+                Associate of Science in Computer Science
               </p>
 
             </li>
@@ -626,67 +648,100 @@
 
         </section>
 
-<!--        <section class="skill">-->
+        <section class="timeline">
 
-<!--          <h3 class="h3 skills-title">My skills</h3>-->
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="ribbon-outline"></ion-icon>
+            </div>
 
-<!--          <ul class="skills-list content-card">-->
+            <h3 class="h3">Leadership & Recognition</h3>
+          </div>
 
-<!--            <li class="skills-item">-->
+          <ol class="timeline-list">
 
-<!--              <div class="title-wrapper">-->
-<!--                <h5 class="h5">Web design</h5>-->
-<!--                <data value="80">80%</data>-->
-<!--              </div>-->
+            <li class="timeline-item">
 
-<!--              <div class="skill-progress-bg">-->
-<!--                <div class="skill-progress-fill" style="width: 80%;"></div>-->
-<!--              </div>-->
+              <div class="timeline-title-wrapper">
+                <h4 class="h4 timeline-item-title">Mentorship & Outreach</h4>
+              </div>
 
-<!--            </li>-->
+              <span>2024 — Present</span>
 
-<!--            <li class="skills-item">-->
+              <p class="timeline-text">
+                Hosted a summer SRE intern who built an AI assistant that walks engineers through disaster-recovery runbooks; co-presented a career talk for high-school students in Pace University's Upward Bound program.
+              </p>
 
-<!--              <div class="title-wrapper">-->
-<!--                <h5 class="h5">Graphic design</h5>-->
-<!--                <data value="70">70%</data>-->
-<!--              </div>-->
+            </li>
 
-<!--              <div class="skill-progress-bg">-->
-<!--                <div class="skill-progress-fill" style="width: 70%;"></div>-->
-<!--              </div>-->
+            <li class="timeline-item">
 
-<!--            </li>-->
+              <div class="timeline-title-wrapper">
+                <h4 class="h4 timeline-item-title">Engineering Recognition</h4>
+              </div>
 
-<!--            <li class="skills-item">-->
+              <span>2025 — 2026</span>
 
-<!--              <div class="title-wrapper">-->
-<!--                <h5 class="h5">Branding</h5>-->
-<!--                <data value="90">90%</data>-->
-<!--              </div>-->
+              <p class="timeline-text">
+                Received 6 peer-nominated awards for incident debugging, AI tooling development, and intern mentorship.
+              </p>
 
-<!--              <div class="skill-progress-bg">-->
-<!--                <div class="skill-progress-fill" style="width: 90%;"></div>-->
-<!--              </div>-->
+            </li>
 
-<!--            </li>-->
+          </ol>
 
-<!--            <li class="skills-item">-->
+        </section>
 
-<!--              <div class="title-wrapper">-->
-<!--                <h5 class="h5">WordPress</h5>-->
-<!--                <data value="50">50%</data>-->
-<!--              </div>-->
+        <section class="skill">
 
-<!--              <div class="skill-progress-bg">-->
-<!--                <div class="skill-progress-fill" style="width: 50%;"></div>-->
-<!--              </div>-->
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="hardware-chip-outline"></ion-icon>
+            </div>
 
-<!--            </li>-->
+            <h3 class="h3">Skills & Technologies</h3>
+          </div>
 
-<!--          </ul>-->
+          <div class="skills-card">
 
-<!--        </section>-->
+            <div class="skills-category">
+              <h4 class="skills-category-title">Languages</h4>
+              <div class="skills-tags">
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">TypeScript / JavaScript</span>
+                <span class="skill-tag">Protocol Buffers</span>
+              </div>
+            </div>
+
+            <div class="skills-category">
+              <h4 class="skills-category-title">Distributed Systems & Infrastructure</h4>
+              <div class="skills-tags">
+                <span class="skill-tag">Distributed Storage</span>
+                <span class="skill-tag">Linux</span>
+                <span class="skill-tag">Progressive Rollouts & Release Gating</span>
+                <span class="skill-tag">Chaos & Fault-Injection Testing</span>
+                <span class="skill-tag">Monitoring & Observability Pipelines</span>
+                <span class="skill-tag">Incident Response</span>
+                <span class="skill-tag">LLM Agent Tooling</span>
+              </div>
+            </div>
+
+            <div class="skills-category">
+              <h4 class="skills-category-title">Tools & Platforms</h4>
+              <div class="skills-tags">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">AWS (Lambda, API Gateway, VPC)</span>
+                <span class="skill-tag">CI/CD Pipelines</span>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
 
       </article>
 

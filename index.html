@@ -12,6 +12,16 @@
   -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("theme");
+      const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+      if (savedTheme === "light" || (!savedTheme && prefersLight)) {
+        document.documentElement.classList.add("light-mode");
+      }
+    })();
+  </script>
+
   <!--
     - custom css link
   -->

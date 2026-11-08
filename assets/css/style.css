@@ -122,6 +122,7 @@
 
 }
 
+:root.light-mode,
 body.light-mode {
   /* solid overrides */
   --jet: hsl(0, 0%, 90%);

@@ -194,14 +194,14 @@
           </li>
 
           <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
             <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle theme">
               <ion-icon name="moon-outline" id="theme-toggle-icon"></ion-icon>
             </button>
           </li>
-
-<!--          <li class="navbar-item">-->
-<!--            <button class="navbar-link" data-nav-link>Portfolio</button>-->
-<!--          </li>-->
 
         </ul>
 
@@ -307,6 +307,53 @@
             </li>
 
           </ul>
+
+        </section>
+
+
+        <!--
+          - featured project
+        -->
+
+        <section class="featured-project">
+
+          <h3 class="h3 featured-project-title">Featured Project</h3>
+
+          <div class="featured-project-card">
+            <div class="featured-project-header">
+              <img src="./assets/images/ohr-icon.jpg" alt="Ohr App Icon" class="featured-project-icon">
+              <div class="featured-project-meta">
+                <div class="featured-project-title-row">
+                  <h4 class="h4 featured-project-name">Ohr (אור) — Shabbat &amp; Holiday Zmanim</h4>
+                  <span class="project-status-badge">Live on App Store</span>
+                </div>
+                <p class="featured-project-tagline">Bringing Light to Your Schedule &bull; Free &bull; iPhone (iOS 26+)</p>
+              </div>
+            </div>
+
+            <p class="featured-project-summary">
+              A native SwiftUI iOS app for tracking Shabbat, Jewish holidays, weekly Torah portions (<em>Parsha</em>), and 15 daily halachic times (<em>Zmanim</em>) anywhere in the world—built with zero third-party dependencies and zero tracking.
+            </p>
+
+            <div class="skills-tags featured-project-tags">
+              <span class="skill-tag">Swift</span>
+              <span class="skill-tag">SwiftUI</span>
+              <span class="skill-tag">WidgetKit</span>
+              <span class="skill-tag">AppIntents</span>
+              <span class="skill-tag">iOS</span>
+            </div>
+
+            <div class="featured-project-actions">
+              <a href="https://apps.apple.com/us/app/ohr-zmanim/id6766283352" class="project-btn project-btn-primary" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-apple"></ion-icon>
+                <span>Download on the App Store</span>
+              </a>
+              <button type="button" class="project-btn project-btn-secondary" data-goto-portfolio>
+                <span>View Details</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
 
         </section>
 
@@ -766,233 +813,81 @@
 
         <section class="projects">
 
-          <ul class="filter-list">
+          <div class="portfolio-featured-card">
 
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
+            <figure class="portfolio-banner">
+              <img src="./assets/images/ohr-banner.jpg" alt="Ohr — Shabbat &amp; Holiday Zmanim for iOS banner" loading="lazy">
+            </figure>
 
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
+            <div class="portfolio-featured-body">
 
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
+              <div class="featured-project-header">
+                <img src="./assets/images/ohr-icon.jpg" alt="Ohr App Icon" class="featured-project-icon">
+                <div class="featured-project-meta">
+                  <div class="featured-project-title-row">
+                    <h3 class="h3 portfolio-project-title">Ohr (אור) — Shabbat &amp; Holiday Zmanim for iOS</h3>
+                    <span class="project-status-badge">Live on App Store</span>
+                  </div>
+                  <p class="featured-project-tagline">Bringing Light to Your Schedule &bull; Free &bull; iPhone (iOS 26+)</p>
+                </div>
               </div>
 
-            </button>
+              <p class="portfolio-project-summary">
+                Ohr is a native SwiftUI iOS app for tracking Shabbat, Jewish holidays, weekly Torah portions (<em>Parsha</em>), and 15 daily halachic times (<em>Zmanim</em>) anywhere in the world—built with zero third-party dependencies and zero tracking.
+              </p>
 
-            <ul class="select-list">
+              <div class="portfolio-highlights">
+                <h4 class="portfolio-section-label">Key Highlights</h4>
+                <ul class="timeline-bullets portfolio-bullets">
+                  <li class="timeline-bullet-item">
+                    <strong>Multi-Location Dashboard:</strong> Swipe between your current location and saved cities worldwide with dynamic time-of-day mesh gradients (or a calm static palette).
+                  </li>
+                  <li class="timeline-bullet-item">
+                    <strong>15 Daily Zmanim + "Up Next":</strong> Expandable schedule from <em>Alot HaShachar</em> through <em>Tzait HaKochavim</em> and <em>Rabbeinu Tam</em>, plus customizable halachic opinions (<em>Shittot</em>) for Candle Lighting, Havdalah, and Israel/Diaspora schedules.
+                  </li>
+                  <li class="timeline-bullet-item">
+                    <strong>Interactive Parsha &amp; Date Seeker:</strong> Full Aliyot 1–7, Maftir, and Haftarah breakdown, plus a morphing Gregorian/Hebrew Date Seeker.
+                  </li>
+                  <li class="timeline-bullet-item">
+                    <strong>Home &amp; Lock Screen Widgets + Local Reminders:</strong> Small, Medium, and Large Home Screen widgets, Circular/Rectangular/Inline Lock Screen widgets, and per-location local notifications.
+                  </li>
+                  <li class="timeline-bullet-item">
+                    <strong>Privacy-First &amp; Zero Dependencies:</strong> 100% Apple-native frameworks (<code>SwiftUI</code>, <code>WidgetKit</code>, <code>AppIntents</code>, <code>CoreLocation</code>, <code>MapKit</code>, <code>UserNotifications</code>) powered by the Hebcal API with multi-tier caching and no ads, accounts, or analytics.
+                  </li>
+                </ul>
+              </div>
 
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
+              <div class="portfolio-tech-stack">
+                <h4 class="portfolio-section-label">Tech Stack</h4>
+                <div class="skills-tags">
+                  <span class="skill-tag">Swift</span>
+                  <span class="skill-tag">SwiftUI</span>
+                  <span class="skill-tag">WidgetKit</span>
+                  <span class="skill-tag">AppIntents</span>
+                  <span class="skill-tag">CoreLocation</span>
+                  <span class="skill-tag">MapKit</span>
+                  <span class="skill-tag">iOS</span>
+                </div>
+              </div>
 
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
+              <div class="portfolio-actions">
+                <a href="https://apps.apple.com/us/app/ohr-zmanim/id6766283352" class="project-btn project-btn-primary" target="_blank" rel="noopener noreferrer">
+                  <ion-icon name="logo-apple"></ion-icon>
+                  <span>Download on the App Store</span>
+                </a>
+                <a href="https://nnsadegh.github.io/Ohr/" class="project-btn project-btn-secondary" target="_blank" rel="noopener noreferrer">
+                  <ion-icon name="globe-outline"></ion-icon>
+                  <span>Project Site &amp; Docs</span>
+                </a>
+                <a href="https://github.com/nnsadegh/Ohr" class="project-btn project-btn-secondary" target="_blank" rel="noopener noreferrer">
+                  <ion-icon name="logo-github"></ion-icon>
+                  <span>GitHub</span>
+                </a>
+              </div>
 
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
+            </div>
 
           </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://github.com/nnsadegh/Ohr">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="Ohr - Jewish Calendar" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Ohr</h3>
-
-                <p class="project-category">iOS Application • Swift</p>
-
-              </a>
-            </li>
-
-            <!-- TODO: add project link -->
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="BillSplitter" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">BillSplitter</h3>
-
-                <p class="project-category">Web Development • React</p>
-
-              </a>
-            </li>
-
-            <!-- TODO: add project link -->
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <!-- TODO: add project link -->
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <!-- TODO: add project link -->
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <!-- TODO: add project link -->
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <!-- TODO: add project link -->
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <!-- TODO: add project link -->
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <!-- TODO: add project link -->
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
 
         </section>
 

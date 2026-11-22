@@ -61,7 +61,9 @@ const selectItems = document.querySelectorAll("[data-select-item]");
 const selectValue = document.querySelector("[data-selecct-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
-select.addEventListener("click", function () { elementToggleFunc(this); });
+if (select) {
+  select.addEventListener("click", function () { elementToggleFunc(this); });
+}
 
 // add event in all select items
 for (let i = 0; i < selectItems.length; i++) {
@@ -140,26 +142,37 @@ for (let i = 0; i < formInputs.length; i++) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
+const activatePage = function (targetPage) {
+  for (let i = 0; i < pages.length; i++) {
+    if (pages[i].dataset.page === targetPage) {
+      pages[i].classList.add("active");
+    } else {
+      pages[i].classList.remove("active");
+    }
+  }
+  navigationLinks.forEach(link => {
+    if (link.innerHTML.toLowerCase() === targetPage) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
-
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        this.classList.add("active");
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      } else {
-        pages[i].classList.remove("active");
-        // Remove active class from other navigation links
-        navigationLinks.forEach(link => {
-          if (link !== this) link.classList.remove("active");
-        });
-      }
-    }
-
+    activatePage(this.innerHTML.toLowerCase());
   });
 }
+
+const gotoPortfolioBtns = document.querySelectorAll("[data-goto-portfolio]");
+gotoPortfolioBtns.forEach(btn => {
+  btn.addEventListener("click", function () {
+    activatePage("portfolio");
+  });
+});
 
 
 
